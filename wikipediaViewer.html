@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Wikipedia Viewer</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <script src="wikipediaViewer.js"></script> 
+        <link rel="stylesheet" type="text/css" href="wikipediaViewer.css">
+    </head>
+    <body>
+        <div class="container-fluid center">
+            <div class="main">
+                <div class="random">
+                    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a>
+                </div>
+                <br>
+                <span class="enter">Enter your Wikipedia search</span>
+                <br><br>
+                <div class="search">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <input class="form-control" id="wikiSearch">
+                        </div>
+                        <div class="col-xs-1">
+                            <button type="button" id="wikibutton" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="searchResults">
+                    <ul id="results">
+                
+                    </ul>
+                </div>
+        </div>
+    </body>
+</html>
