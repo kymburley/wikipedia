@@ -14,7 +14,6 @@ html, body {
 .center {
     height: 100vh;
     position: relative; 
-    border: 3px solid red;
 }
 
 /* Vertical and horizontal centering - child container */
@@ -27,7 +26,6 @@ html, body {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -webkit-transform:translate(-50%, -50%);
-    border: 2px solid blue;
 }
 
 .random {
@@ -49,4 +47,25 @@ html, body {
 
 .random a:active {
     text-decoration: none;
+}
+
+.btn {
+    background-color: #076F8A;
+    border-color: #076F8A;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #54B0BD;
+    border-color: #54B0BD;
+}
+
+.btn .active {
+    background-color: #076F8A;
+    border-color: #076F8A;
+}
+
+.searchResults {
+    padding-top: 100px;
 }
