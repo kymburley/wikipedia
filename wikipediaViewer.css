@@ -5,7 +5,7 @@ html, body {
     font-weight: 600;
     height: 100vh;
     background-color: #032A2F;
-    color: #D0D2C4;
+    color: #032A2F;
     letter-spacing: 1px;
 }
 
@@ -33,7 +33,7 @@ html, body {
 }
 
 .random a:link {
-    text-decoration: none;
+    color: #D0D2C4;
 }
 
 .random a:visited {
@@ -42,6 +42,7 @@ html, body {
 }
 
 .random a:hover {
+    color: #54B0BD;
     text-decoration: none;
 }
 
@@ -67,5 +68,31 @@ html, body {
 }
 
 .searchResults {
-    padding-top: 100px;
+    padding-top: 125px;
+}
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+ul li a:link {
+    text-decoration: none;
+    color: #076F8A;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #D63932;
+}
+
+ul li a:visited {
+    color: #076F8A;
+    text-decoration: none;
+}
+
+ul li {
+    background: #D0D2C4;
 }
