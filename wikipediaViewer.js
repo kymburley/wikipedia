@@ -21,6 +21,7 @@ $(document).ready(function() {
                     $('#wikiSearch').val('');
                 } else {
                     $('.results').html('');
+
                     /* Move .random and #wikiSearch to the top of the page */
                     $('.search').css("top", "8%");
                     $('#wikiSearch').val('');

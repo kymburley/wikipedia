@@ -72,6 +72,10 @@ html, body {
 
 }
 
+.results {
+    margin: 10%;
+}
+
 ul {
     width: 80%;
     margin: auto;
