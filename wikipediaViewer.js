@@ -23,7 +23,7 @@ $(document).ready(function() {
 
                     /* Show the results */
                     for (i = 0; i < data[1].length; i++) {
-                        $('#results').append("<li><a href= " + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");
+                        $('#results').append("<li><a href= " + data[3][i] + ">" + data[1][i] + "<p>" + data[2][i] + "</p></a></li>");
                     } 
                 }
             },
