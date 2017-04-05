@@ -16,14 +16,14 @@ $(document).ready(function() {
                 var link = data[3][0];
                 
                 if (title === undefined){
-                    $('#results').html("There are no articles on " + searchTerm + ". Please search for another.");
+                    $('.results').html("There are no articles on " + searchTerm + ". Please search for another.");
+                    $('.results').css("color", "#fff");
                     $('#wikiSearch').val('');
                 } else {
-                    $('#results').html('');
+                    $('.results').html('');
                     /* Move .random and #wikiSearch to the top of the page */
                     $('.search').css("top", "8%");
                     $('#wikiSearch').val('');
-                   /* $('ul').css("margin-top", "150px");*/
 
                     /* Show the results */
                     for (i = 0; i < data[1].length; i++) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
                         description = data[2][i];
                         link = data[3][i];
                         
-                        $('#results').append("<li><a href= " + link + ">" + title + "<br><br><p>" + description + "</p></a></li>");
+                        $('.results').append("<li><a href=" + link + ">" + title + "<br><br><p>" + description + "</p></a></li>");
                     } 
                 }
             },
