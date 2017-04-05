@@ -23,7 +23,7 @@ $(document).ready(function() {
                     $('.results').html('');
 
                     /* Move .random and #wikiSearch to the top of the page */
-                    $('.search').css("top", "8%");
+                    $('.search').css("top", "10%");
                     $('#wikiSearch').val('');
 
                     /* Show the results */
