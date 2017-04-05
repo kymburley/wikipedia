@@ -11,7 +11,11 @@ $(document).ready(function() {
             async: false,
             dataType: "json",
             success: function(data){
-                if (data[1][0] === undefined){
+                var title = data[1][0];
+                var description = data[2][0];
+                var link = data[3][0];
+                
+                if (title === undefined){
                     $('#results').html("There are no articles on " + searchTerm + ". Please search for another.");
                     $('#wikiSearch').val('');
                 } else {
@@ -23,7 +27,11 @@ $(document).ready(function() {
 
                     /* Show the results */
                     for (i = 0; i < data[1].length; i++) {
-                        $('#results').append("<li><a href= " + data[3][i] + ">" + data[1][i] + "<p>" + data[2][i] + "</p></a></li>");
+                        title = data[1][i];
+                        description = data[2][i];
+                        link = data[3][i];
+                        
+                        $('#results').append("<li><a href= " + link + ">" + title + "<br><br><p>" + description + "</p></a></li>");
                     } 
                 }
             },

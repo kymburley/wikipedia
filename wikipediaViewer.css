@@ -71,28 +71,33 @@ html, body {
     padding-top: 125px;
 }
 
+.results {
+    margin: 5%;
+
+}
+
 ul {
     list-style-type:none;
-    margin: 0;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-ul li a:link {
-    text-decoration: none;
-    color: #076F8A;
-}
-
-ul li a:hover {
-    text-decoration: none;
-    color: #D63932;
-}
-
-ul li a:visited {
-    color: #076F8A;
-    text-decoration: none;
+    margin: 0;    
 }
 
 ul li {
     background: #D0D2C4;
+    margin: 2%;
+    padding: 3%;
 }
+
+ul li a:link {
+    text-decoration: none;
+    color: #032A2F;
+}
+
+ul li a:visited {
+    color: #032A2F;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #076F8A;
+   }
