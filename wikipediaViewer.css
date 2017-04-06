@@ -22,7 +22,7 @@ html, body {
     margin: 0; 
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%; /* this needs to be changed to 40% for xs screens */
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -webkit-transform:translate(-50%, -50%);
@@ -69,7 +69,6 @@ html, body {
 
 .searchResults {
     padding-top: 140px;
-
 }
 
 .results {
